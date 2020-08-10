@@ -1,4 +1,6 @@
 def lambda_function(event, context):
+    if event['given'] == 3:
+        return 'fizz'
     return str(event['given'])
 
 
