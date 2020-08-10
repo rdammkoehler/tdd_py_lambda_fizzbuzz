@@ -1,6 +1,6 @@
 def lambda_function(event, context):
     given = event['given']
-    if given == 3:
+    if given % 3 == 0:
         return 'fizz'
     return str(given)
 
