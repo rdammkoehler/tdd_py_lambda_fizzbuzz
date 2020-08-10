@@ -15,3 +15,6 @@ def test_lambda_function_fizz_buzz_returns_two_given_two():
 
 def test_lambda_function_fizz_buzz_returns_fizz_given_three():
     assert lambda_function(event={'given': 3}, context=None) == 'fizz'
+
+def test_lambda_function_fizz_buzz_returns_fizz_given_six():
+    assert lambda_function(event={'given': 6}, context=None) == 'fizz'
