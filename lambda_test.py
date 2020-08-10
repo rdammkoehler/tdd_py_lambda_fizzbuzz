@@ -1,7 +1,8 @@
 def lambda_function(event, context):
-    if event['given'] == 3:
+    given = event['given']
+    if given == 3:
         return 'fizz'
-    return str(event['given'])
+    return str(given)
 
 
 def test_lambda_function_fizz_buzz_returns_one_given_one():
