@@ -1,5 +1,5 @@
 def lambda_function(event, context):
-    return '1'
+    return str(event['given'])
 
 
 def test_lambda_function_fizz_buzz_returns_one_given_one():
