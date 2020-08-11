@@ -5,7 +5,7 @@ def lambda_function(event, context):
         response = 'fizz'
     if given % 5 == 0:
         response += 'buzz'
-    return response if response else str(given)
+    return response or str(given)
 
 
 def test_lambda_function_fizz_buzz_returns_one_given_one():
