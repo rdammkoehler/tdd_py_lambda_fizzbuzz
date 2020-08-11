@@ -1,12 +1,11 @@
 def lambda_function(event, context):
     given = event['given']
-    if given % 15 == 0:
-        return 'fizzbuzz'
+    response = ''
     if given % 3 == 0:
-        return 'fizz'
+        response = 'fizz'
     if given % 5 == 0:
-        return 'buzz'
-    return str(given)
+        response += 'buzz'
+    return response if response else str(given)
 
 
 def test_lambda_function_fizz_buzz_returns_one_given_one():
