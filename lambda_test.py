@@ -26,5 +26,10 @@ def test_lambda_function_fizz_buzz_returns_fizz_given_six():
 def test_lambda_function_fizz_buzz_returns_buzz_given_five():
     assert lambda_function(event={'given': 5}, context=None) == 'buzz'
 
+
 def test_lambda_function_fizz_buzz_returns_buzz_given_ten():
     assert lambda_function(event={'given': 10}, context=None) == 'buzz'
+
+
+def test_lambda_function_fizz_buzz_returns_fizzbuzz_given_fifteen():
+    assert lambda_function(event={'given': 15}, context=None) == 'fizzbuzz'
